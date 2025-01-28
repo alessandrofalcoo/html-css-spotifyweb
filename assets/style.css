@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --sidebar-nav: #000000;
+    --upgrade-section: #080b12;
+    --char-color: #787a7f;
+    --titles-color: #ffffff;
+    --playing-bar: #282828;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    width: 100%;
+}
