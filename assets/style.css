@@ -13,12 +13,14 @@
     --char-color: #787a7f;
     --titles-color: #ffffff;
     --playing-bar: #282828;
+    --main-section: #141922;
 }
 
 body{
     background-color: var(--upgrade-section);
     color: var(--char-color);
     font-family: 'Montserrat';
+    display: flex;
 }
 /* End Common */
 
@@ -39,9 +41,18 @@ img{
 }
 
 header{
-    width: 50%;
+    width: 100%;
     height: 100%;
     padding: 1rem;
+}
+
+main{
+    background-color: var(--main-section);
+}
+
+.upgrade{
+    width: 100%;
+    padding: 2rem 0;
 }
 
 
@@ -64,7 +75,7 @@ header{
             color: var(--char-color);
             text-decoration: none;
             &:hover{
-                color: white;
+                color: var(--titles-color);
             }
         }
     }
@@ -78,8 +89,20 @@ header{
             padding: 0.5rem;
         }
     }
-    .
-   
+    .lower-nav{
+        .download{
+            padding: 0.5rem 0;
+            a{
+                color: var(--char-color);
+                text-decoration: none;
+            }
+        }
+        .account{
+            color: var(--titles-color);
+            padding: 0.5rem 0;
+            font-weight: bold;
+        }
+    }
 }
 
 
@@ -90,6 +113,21 @@ header{
 
 /* Main */
 
+.upgrade{
+    background-color: var(--upgrade-section);
+    justify-content: flex-end;
+    button{
+        border-color: white;
+        border-radius: 50px;
+        background-color: transparent;
+        padding: 0.5rem 2rem;
+    }
+    a{
+        font-weight: bold;
+        color: var(--titles-color);
+        text-decoration: none;
+    }
+}
 
 
 /* End Main */
