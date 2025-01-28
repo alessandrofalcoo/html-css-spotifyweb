@@ -1,3 +1,5 @@
+/* Common */
+
 *
 {
     margin: 0;
@@ -18,15 +20,93 @@ body{
     color: var(--char-color);
     font-family: 'Montserrat';
 }
+/* End Common */
 
-nav{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--sidebar-nav);
-    width: 33%;
+/* Layout */
+ul{
+    list-style: none;
+}
+
+img{
+    width: 25px;
 }
 
 .logo{
-    width: 300px;
+    padding: 1rem 0;
+   img{
+    width: 80%;
+   }
 }
 
+header{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+
+
+
+/* End Layout */
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--sidebar-nav);
+    .upper-nav{
+        line-height: 2.5rem;
+         .nav-list{
+        a{
+            text-align: center;
+            color: var(--char-color);
+            text-decoration: none;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+        h3{
+            padding-top: 2rem;
+            color: var(--titles-color);
+        }
+        .add{
+            background-color: var(--char-color);
+            border: none;
+            padding: 0.5rem;
+        }
+    }
+    .
+   
+}
+
+
+
+/* End Header */
+
+
+
+/* Main */
+
+
+
+/* End Main */
+
+
+
+
+
+/* Footer */
+
+
+
+
+/* End Footer */
+
+/* Media query */
+
+@media screen and (max-width: 480px) {
+    
+}
