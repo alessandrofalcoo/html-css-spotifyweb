@@ -115,6 +115,7 @@ header{
 
 .upgrade{
     background-color: var(--upgrade-section);
+    display: flex;
     justify-content: flex-end;
     button{
         border-color: white;
