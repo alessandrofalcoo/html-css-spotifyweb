@@ -14,9 +14,19 @@
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--upgrade-section);
+    color: var(--char-color);
+    font-family: 'Montserrat';
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sidebar-nav);
+    width: 33%;
 }
 
 .logo{
-    width: 100%;
+    width: 300px;
 }
+
