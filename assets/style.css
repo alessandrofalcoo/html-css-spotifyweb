@@ -20,11 +20,15 @@ body{
     background-color: var(--upgrade-section);
     color: var(--char-color);
     font-family: 'Montserrat';
-    display: flex;
 }
 /* End Common */
 
 /* Layout */
+
+.top{
+    display: flex;
+}
+
 ul{
     list-style: none;
 }
@@ -41,13 +45,14 @@ img{
 }
 
 header{
-    width: 100%;
+    width: 300px;
     height: 100%;
     padding: 1rem;
 }
 
 main{
     background-color: var(--main-section);
+    width: calc(100% - 300px);
 }
 
 .upgrade{
@@ -55,6 +60,15 @@ main{
     padding: 2rem 0;
 }
 
+.container{
+    margin: 2rem;
+}
+
+footer{
+    background-color: var(--playing-bar);
+    height: 100px;
+    width: 100%;
+}
 
 
 /* End Layout */
@@ -92,6 +106,11 @@ header{
     .lower-nav{
         .download{
             padding: 0.5rem 0;
+            span{
+                position: relative;
+                bottom: 7px;
+                left: 5px;
+            }
             a{
                 color: var(--char-color);
                 text-decoration: none;
@@ -101,6 +120,15 @@ header{
             color: var(--titles-color);
             padding: 0.5rem 0;
             font-weight: bold;
+            span{
+                position: relative;
+                bottom: 7px;
+                left: 5px;
+            }
+            img{
+                border-radius: 50px;
+                background-color: grey;
+            }
         }
     }
 }
