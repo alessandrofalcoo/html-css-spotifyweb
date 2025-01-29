@@ -196,6 +196,14 @@ footer{
         p{
             padding: 0 0 1.5rem ;
         }
+    }
+    .popular-artists{
+        p{
+            padding: 0 0 1.5rem;
+        }
+        img{
+            border-radius: 50%;
+        }
     }   
 }
 
