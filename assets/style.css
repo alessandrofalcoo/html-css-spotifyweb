@@ -27,6 +27,7 @@ body{
 
 .top{
     display: flex;
+    height: calc(100vh- 100px);
 }
 
 ul{
@@ -45,8 +46,7 @@ img{
 }
 
 .sidebar{
-    width: 200px;
-    height: 1000px;
+    width: 300px;
     padding: 1rem;
 }
 
@@ -62,6 +62,14 @@ main{
 
 .container{
     margin: 2rem;
+}
+
+.artists{
+    max-width: 200px;
+    img{
+        min-width: 150px;
+        border-radius: 50%;
+    }
 }
 
 footer{
@@ -105,7 +113,7 @@ footer{
     }
     .lower-nav{
         position: relative;
-        top: 300px;
+        top: 400px;
         .download{
             padding: 0.5rem 0;
             span{
@@ -151,7 +159,7 @@ footer{
         border-color: white;
         border-radius: 50px;
         background-color: transparent;
-        padding: 0.5rem 2rem;
+        padding: 1rem 3rem;
     }
     a{
         font-weight: bold;
@@ -201,11 +209,10 @@ footer{
         p{
             padding: 0 0 1.5rem;
         }
-        img{
-            border-radius: 50%;
-        }
     }   
 }
+
+
 
 
 /* End Main */
