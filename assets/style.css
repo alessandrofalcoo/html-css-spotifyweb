@@ -42,6 +42,12 @@ img{
     width: 25px;
 }
 
+.small-logo{
+    img{
+        width: 20%;
+    }
+}
+
 .logo{
     padding: 1rem 0;
    img{
@@ -50,7 +56,7 @@ img{
 }
 
 .sidebar{
-    width: 300px;
+    width: 100%;
     padding: 1rem;
 }
 
@@ -84,10 +90,7 @@ footer{
     padding-left: 1rem;
 }
 
-
 /* End Layout */
-
-
 
 /* Sidebar */
 
@@ -149,11 +152,7 @@ footer{
     }
 }
 
-
-
 /* End Sidebar */
-
-
 
 /* Main */
 
@@ -198,6 +197,7 @@ footer{
     }
     .description{
         max-width: 150px;
+        padding: 0.5rem 0;
         h4{
             text-align: center;
             color: var(--titles-color);
@@ -207,30 +207,21 @@ footer{
         }
     }
     .created-for{
-        p{
-            padding: 0 0 1.5rem ;
-        }
+        padding: 2rem 0;
     }
     .popular-artists{
-        p{
-            padding: 0 0 1.5rem;
-        }
+        padding: 2rem 0;
     }   
 }
 
 
-
-
 /* End Main */
-
-
-
-
 
 /* Footer */
 
 .footer-container{
     display: flex;
+    padding: 1rem 0;
     .picture{
         width: 50px;
         height: 50px;
@@ -253,14 +244,14 @@ footer{
         flex-direction: column;
         padding: 0 2.5rem;
         gap: 0.25rem;
+        
     }
     .utilities{
         margin: auto;
         .commands{
             display: flex;
-            gap: 1rem;
-            padding: 0 2rem;
-            justify-content: space-between;
+            padding: 0 0.5rem;
+            justify-content: space-around;
             .fa-2xl{
                 padding-top: 0.5rem;
             }
@@ -269,20 +260,39 @@ footer{
             display: flex;
             gap: 1rem;
             padding: 1rem 0rem;
+            .slider{
+                width: 400px;
+            }
         }
     }
     .volume{
         display: flex;
-        gap: 0.5rem;
+        gap: 1.25rem;
         margin: auto;
+        padding-left: 1.5rem;
     }
 }
-
 
 /* End Footer */
 
 /* Media query */
 
-@media screen and (max-width: 480px) {
-    
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .logo{
+        display: none;
+    }
+    .nav-list{
+        span{
+            display: none;
+        }
+    }
+    .playlist-section{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .small-logo{
+        display: none;
+    }
 }
