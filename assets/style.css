@@ -254,12 +254,27 @@ footer{
         padding: 0 2.5rem;
         gap: 0.25rem;
     }
-    .commands{
-        display: flex;
-        gap: 1.5rem;
-        .fa-2xl{
-            padding-top: 0.5rem;
+    .utilities{
+        margin: auto;
+        .commands{
+            display: flex;
+            gap: 1rem;
+            padding: 0 2rem;
+            justify-content: space-between;
+            .fa-2xl{
+                padding-top: 0.5rem;
+            }
         }
+        .slide-bar{
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0rem;
+        }
+    }
+    .volume{
+        display: flex;
+        gap: 0.5rem;
+        margin: auto;
     }
 }
 
