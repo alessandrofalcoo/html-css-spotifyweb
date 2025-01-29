@@ -40,13 +40,13 @@ img{
 .logo{
     padding: 1rem 0;
    img{
-    width: 80%;
+    width: 70%;
    }
 }
 
 .sidebar{
-    width: 300px;
-    height: 100%;
+    width: 200px;
+    height: 1000px;
     padding: 1rem;
 }
 
@@ -104,6 +104,8 @@ footer{
         }
     }
     .lower-nav{
+        position: relative;
+        top: 300px;
         .download{
             padding: 0.5rem 0;
             span{
@@ -156,6 +158,45 @@ footer{
         color: var(--titles-color);
         text-decoration: none;
     }
+}
+
+.container{
+    .type{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+    h2{
+        padding: 1rem 0;
+        color: var(--titles-color);
+    }
+    .albums{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .album{
+            max-width: 200px;
+            img{
+                min-width: 150px;
+            }
+        }
+    }
+    .description{
+        max-width: 150px;
+        h4{
+            text-align: center;
+            color: var(--titles-color);
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .created-for{
+        p{
+            padding: 0 0 1.5rem ;
+        }
+    }   
 }
 
 
