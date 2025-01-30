@@ -379,12 +379,18 @@ input[type="range"]::-webkit-slider-runnable-track{
 /* Media query */
 
 @media screen and (min-width: 769px) and (max-width: 1920px) {
+    main{
+        width: calc(100% - 220px);
+    }    
     .small-logo{
         display: none;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
+    main{
+        width: calc(100% - 220px);
+    }    
         .small-logo{
             display: none;
         }
