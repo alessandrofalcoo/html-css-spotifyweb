@@ -267,7 +267,7 @@ footer{
 
 /* Range slider style */
 
-input[type="range"] {
+/* input[type="range"] {
     -webkit-appearance: none;
     border-radius: 10px;
 }
@@ -284,7 +284,7 @@ input[type="range"]::-webkit-slider-runnable-track{
     -webkit-appearance: none;
     background-color: var(--char-color);
     border-radius: 20px;
-}
+} */
 
 
 /* End Range slider style */
@@ -351,9 +351,8 @@ input[type="range"]::-webkit-slider-runnable-track{
     }
     .volume{
         display: flex;
-        gap: 1.25rem;
+        gap: 1rem;
         margin: auto;
-        padding-left: 1.5rem;
     }
 }
 
@@ -429,4 +428,5 @@ input[type="range"]::-webkit-slider-runnable-track{
             max-width: 50%;
         }
     }
+  
 }
