@@ -20,6 +20,7 @@ body{
     background-color: var(--upgrade-section);
     color: var(--char-color);
     font-family: 'Montserrat';
+    overflow: hidden;
 }
 
 [class^="fa"]{
@@ -31,7 +32,7 @@ body{
 
 .top{
     display: flex;
-    height: calc(100vh- 100px);
+    height: calc(100vh - 100px);
 }
 
 ul{
@@ -56,15 +57,15 @@ img{
 }
 
 .sidebar{
-    width: 40%;
+    width: 50px;
     padding: 1rem;
     height: calc(100vh - 70px - 40px);
-    overflow-y: auto;
 }
 
 main{
     background-color: var(--main-section);
-    width: calc(100% - 300px);
+    width: calc(100% - 220px);
+    overflow-y: auto;
 }
 
 .upgrade{
@@ -90,6 +91,7 @@ footer{
     width: 100%;
     padding: 1rem 0;
     padding-left: 1rem;
+    overflow: hidden;
 }
 
 /* End Layout */
@@ -98,14 +100,16 @@ footer{
 
 .sidebar{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: var(--sidebar-nav);
+    overflow: hidden;
     .logo{
         text-align: center;
     }
     .small-logo{
-        display: none;
-        text-align: center;
+        width: 125px;
+        text-align: start;
     }
     .upper-nav{
         line-height: 2.5rem;
@@ -135,17 +139,18 @@ footer{
                 }
             
         }
-        .playlist-section a{
-            text-decoration: none;
-            color: var(--char-color);
-            &:hover{
-                color: white;
+        .playlist-section{
+            a{
+                text-decoration: none;
+                color: var(--char-color);
+                &:hover{
+                    color: white;
+                }
             }
         }
     }
     .lower-nav{
         position: relative;
-        top: 400px;
         .download{
             padding: 0.5rem 0;
             span{
@@ -265,7 +270,6 @@ footer{
 
 .footer-container{
     display: flex;
-    padding: 1rem 0;
     .picture{
         width: 50px;
         height: 50px;
@@ -275,23 +279,36 @@ footer{
         }
     }
     .song-artist{
-        text-align: center;
+        text-align: left;
         strong{
             color: white;
+        }
+        .sinister{
+            padding-left: 0.5rem;
         }
     }
     .song{
         padding: 0 0 1rem 0.5rem;
-        &:hover{
+        a{
+            color: var(--char-color);
+            text-decoration: none;
+             &:hover{
             color: white;
             text-decoration: underline;
         }
+        }
+       
     }
     .add-fav{
         display: flex;
         flex-direction: column;
         padding: 0 2.5rem;
         gap: 0.25rem;
+        i{
+            &:hover{
+                color: white;
+            }
+        }
         
     }
     .utilities{
@@ -304,6 +321,9 @@ footer{
             justify-content: space-around;
             .fa-2xl{
                 padding-top: 0.5rem;
+                &:hover{
+                    transform: scale(1.25);
+                }
             }
         }
         .slide-bar{
@@ -328,6 +348,9 @@ footer{
 /* Media query */
 
 @media screen and (max-width: 600px) {
+    .sidebar{
+        max-width: 50px;
+    }
     .logo{
         display: none;
     }
@@ -353,13 +376,20 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .small-logo{
-        display: none;
+    .sidebar{
+        width: 220px;
+        .small-logo{
+            display: none;
+        }
     }
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
+    .sidebar{
+        width: 220px;
+
+    }
     .small-logo{
         display: none;
     }
