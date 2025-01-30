@@ -195,6 +195,10 @@ footer{
         border-radius: 50px;
         background-color: transparent;
         padding: 1rem 3rem;
+        transition: transform .2s;
+        &:hover{
+            transform: scale(1.25);
+        }
     }
     a{
         font-weight: bold;
