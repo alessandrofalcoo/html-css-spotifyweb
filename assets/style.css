@@ -56,8 +56,10 @@ img{
 }
 
 .sidebar{
-    width: 100%;
+    width: 40%;
     padding: 1rem;
+    height: calc(100vh - 70px - 40px);
+    overflow-y: auto;
 }
 
 main{
@@ -98,18 +100,28 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--sidebar-nav);
+    .logo{
+        text-align: center;
+    }
+    .small-logo{
+        display: none;
+        text-align: center;
+    }
     .upper-nav{
         line-height: 2.5rem;
          .nav-list{
-        a{
-            text-align: center;
-            color: var(--char-color);
-            text-decoration: none;
-            &:hover{
-                color: var(--titles-color);
+            a{
+                text-align: center;
+                color: var(--char-color);
+                text-decoration: none;
+                &:hover{
+                    color: var(--titles-color);
+                }
+                img{
+                    vertical-align: middle;
+                }
             }
         }
-    }
         h3{
             padding-top: 2rem;
             color: var(--titles-color);
@@ -117,7 +129,18 @@ footer{
         .add{
             background-color: var(--char-color);
             border: none;
-            padding: 0.5rem;
+            padding: 0.75rem;
+                &:hover{
+                    background-color: white;
+                }
+            
+        }
+        .playlist-section a{
+            text-decoration: none;
+            color: var(--char-color);
+            &:hover{
+                color: white;
+            }
         }
     }
     .lower-nav{
@@ -133,12 +156,19 @@ footer{
             a{
                 color: var(--char-color);
                 text-decoration: none;
+                &:hover{
+                    color: white;
+                }
             }
         }
         .account{
             color: var(--titles-color);
             padding: 0.5rem 0;
             font-weight: bold;
+            a{
+                color: var(--titles-color);
+                text-decoration: none;
+            }
             span{
                 position: relative;
                 bottom: 7px;
@@ -179,6 +209,16 @@ footer{
         flex-wrap: wrap;
         gap: 1.5rem;
         padding: 1rem 0;
+        a{
+            color: var(--char-color);
+            text-decoration: none;
+        }
+        p{
+            &:hover{
+            color: white;
+        }
+        }
+        
     }
     h2{
         padding: 1rem 0;
@@ -238,6 +278,10 @@ footer{
     }
     .song{
         padding: 0 0 1rem 0.5rem;
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
     }
     .add-fav{
         display: flex;
@@ -249,6 +293,8 @@ footer{
     .utilities{
         margin: auto;
         .commands{
+            max-width: 300px;
+            margin: auto;
             display: flex;
             padding: 0 0.5rem;
             justify-content: space-around;
@@ -277,9 +323,12 @@ footer{
 
 /* Media query */
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 600px) {
     .logo{
         display: none;
+    }
+    .small-logo{
+        display: inline-block;
     }
     .nav-list{
         span{
@@ -289,9 +338,24 @@ footer{
     .playlist-section{
         display: none;
     }
+    .lower-nav{
+        hr{
+            display: none;
+        }
+        span{
+            display: none;
+        }
+    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
+    .small-logo{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
     .small-logo{
         display: none;
     }
