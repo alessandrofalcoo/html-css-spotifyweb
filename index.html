@@ -24,32 +24,45 @@
                 <div class="upper-nav">
                     <div class="nav-list">
                         <ul>
-                            <li><a href="#"><img src="./assets/spotify/img/home.svg" alt=""> <span>Home</span></a></li>
-                            <li><a href="#"><img src="./assets/spotify/img/search.svg" alt=""> <span>Cerca</span></a></li>
-                            <li><a href="#"><img src="./assets/spotify/img/libreria.svg" alt=""> <span>La tua libreria</span></a></li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/spotify/img/home.svg" alt="">
+                                     <span>Home</span>
+                                    </a>
+                                </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/spotify/img/search.svg" alt=""> <span>Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/spotify/img/libreria.svg" alt=""> <span>La tua libreria</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="playlist-section">
-                        <ul><h3><strong>PLAYLIST</strong></h3>
+                        <h3>PLAYLIST</h3>
+                        <ul>
                             <li>
-                                <a href=""><button class="add">
-                                    <i class="fa-solid fa-plus" style="color: black;"></i>
-                                </button>    
-                                 
-                                </button></a>
-                               
+                                <button class="add">
+                                    <a href="#">
+                                        <i class="fa-solid fa-plus" style="color: black;"></i>
+                                    </a>
+                                </button>
                                 <strong>
                                     <a href=""><span> Crea Playlist</span></a>
                                 </strong>
                                 </li>
-                            <a href="#"><li>Nome Playlist</li></a>
-                            <a href="#"><li>Nome Playlist</li></a>
-                            <a href="#"><li>Nome Playlist</li></a>
-                            <a href="#"><li>Nome Playlist</li></a>
-                            <a href="#"><li>Nome Playlist</li></a>
-                            <a href="#"><li>Nome Playlist</li></a>
-                            <a href="#"><li>Nome Playlist</li></a>
-                        </ul>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>                            
+                                <li><a href="#">Nome Playlist</a></li>                                
+                                <li><a href="#">Nome Playlist</a></li>                            
+                                <li><a href="#">Nome Playlist</a></li>                                
+                                <li><a href="#">Nome Playlist</a></li>                            
+                                <li><a href="#">Nome Playlist</a></li>                        
+                            </ul>
                     </div>
                
                 </div>
@@ -169,58 +182,65 @@
    
     <footer>
         <div class="footer-container">
-            <div class="picture">
-                <img src="./assets/spotify/img/sinister.jpeg" alt="">
-            </div>
-            <div class="song-artist">
-                <div class="sinister">
-                    <strong>Sinister</strong>
-                </div>               
-                <div class="song">
-                    <a href=""><p>Brano nome</p></a>
+            <div class="left-container">
+                    <div class="picture">
+                    <img src="./assets/spotify/img/sinister.jpeg" alt="">
+                </div>
+                <div class="song-artist">
+                    <div class="sinister">
+                        <strong>Sinister</strong>
+                    </div>               
+                    <div class="song">
+                        <a href=""><p>Brano nome</p></a>
+                    </div>
+                </div>
+                <div class="add-fav">
+                    <a href="#"><i class="fa-regular fa-heart" style="color: #787a7f;"></i></a>
+                    <a href="#"><p><i class="fa-regular fa-folder" style= "color: #787a7f;"></i></p></a>
                 </div>
             </div>
-            <div class="add-fav">
-                <a href="#"><i class="fa-regular fa-heart" style="color: #787a7f;"></i></a>
-                <a href="#"><p><i class="fa-regular fa-folder" style= "color: #787a7f;"></i></p></a>
-            </div>
-            <div class="utilities">
-                <div class="commands">
-                    <a href="#">
+            <div class="central-container">
+                 <div class="utilities">
+                    <div class="commands">
+                        <a href="#">
                         <i class="fa-solid fa-shuffle"></i>
-                    </a>
-                    <a href="#">
+                        </a>
+                        <a href="#">
                         <i class="fa-solid fa-backward-step"></i>
-                    </a>
-                    <a href="#">
+                        </a>
+                        <a href="#">
                         <i class="fa-regular fa-circle-play fa-2xl"></i>
-                    </a>
-                    <a href="#">
+                        </a>
+                        <a href="#">
                         <i class="fa-solid fa-forward-step"></i>
-                    </a>
-                    <a href="#">
+                        </a>
+                        <a href="#">
                         <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </a>
+                    </div>
+                    <div class="slide-bar">
+                        <span>0:25</span>
+                            <input type="range" min="1" max="100" value="50" class="slider">
+                        <span>4:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="volume">
+                    <a href="#">
+                        <i class="fa-solid fa-list"></i>      
+                    </a>          
+                    <a href="#">
+                        <i class="fa-solid fa-desktop"></i>  
+                    </a>              
+                    <a href="#">
+                        <i class="fa-solid fa-volume-high"></i>
                     </a>
-                </div>
-                <div class="slide-bar">
-                    <span>0:25</span>
-                        <input type="range" min="1" max="100" value="50" class="slider">
-                    <span>4:23</span>
-                </div>
-            </div>
-            <div class="volume">
-                <a href="#">
-                    <i class="fa-solid fa-list"></i>      
-                </a>          
-                <a href="#">
-                    <i class="fa-solid fa-desktop"></i>  
-                </a>              
-                <a href="#">
-                    <i class="fa-solid fa-volume-high"></i>
-                </a>
-                <input type="range" min="1" max="100" value="50" class="slider">
+                    <input type="range" min="1" max="100" value="50" class="slider">
 
-            </div>
+                </div>
+            </div>                    
+           
            
         </div>
 

@@ -266,8 +266,33 @@ footer{
 
 /* Footer */
 
+/* Range slider style */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: white;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    background-color: var(--char-color);
+    border-radius: 20px;
+}
+
+
+/* End Range slider style */
+
 .footer-container{
     display: flex;
+    align-items: center;
     .picture{
         width: 50px;
         height: 50px;
@@ -300,14 +325,8 @@ footer{
     .add-fav{
         display: flex;
         flex-direction: column;
-        padding: 0 2.5rem;
+        padding: 0 1.5rem;
         gap: 0.25rem;
-        i{
-            &:hover{
-                color: white;
-            }
-        }
-        
     }
     .utilities{
         margin: auto;
@@ -329,7 +348,7 @@ footer{
             gap: 1rem;
             padding: 1rem 0rem;
             .slider{
-                width: 400px;
+                width: auto;
             }
         }
     }
@@ -341,10 +360,25 @@ footer{
     }
 }
 
+.left-container{
+    display: flex;
+}
+
+.central-container{
+    display: flex;
+    margin: auto;
+}
+
+.right-container{
+    display: flex;
+    margin: auto;
+}
+
 /* End Footer */
 
 /* Media query */
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
     .sidebar{
         width: 220px;
 
@@ -354,7 +388,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
     .sidebar{
         width: 220px;
         .small-logo{
@@ -390,7 +424,3 @@ footer{
         }
     }
 }
-
-
-
-
