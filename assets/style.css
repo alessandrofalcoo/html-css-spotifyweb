@@ -196,6 +196,7 @@ footer{
         border-color: white;
         border-radius: 50px;
         background-color: transparent;
+        margin: 0 2rem;
         padding: 1rem 3rem;
         transition: transform .2s;
         &:hover{
