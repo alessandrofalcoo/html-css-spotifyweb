@@ -74,6 +74,18 @@ main{
     margin: 2rem;
 }
 
+.green-line{
+    background-color: var(--main-section);
+    height: 0.25rem;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider{
+    accent-color: green;
+}
+
+
 .artists{
     max-width: 200px;
     img{
@@ -219,11 +231,16 @@ footer{
         a{
             color: var(--char-color);
             text-decoration: none;
+            &:hover{
+                .green-line{
+                    background-color: green;
+                }
+            }
         }
         p{
             &:hover{
             color: white;
-        }
+            }
         }
         
     }
@@ -268,24 +285,9 @@ footer{
 
 /* Range slider style */
 
-/* input[type="range"] {
-    -webkit-appearance: none;
-    border-radius: 10px;
+.slider::-webkit-slider-thumb{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(101%) contrast(101%);
 }
-
-input[type="range"]::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    background-color: white;
-    border-radius: 10px;
-    height: 20px;
-    width: 20px;
-}
-
-input[type="range"]::-webkit-slider-runnable-track{
-    -webkit-appearance: none;
-    background-color: var(--char-color);
-    border-radius: 20px;
-} */
 
 
 /* End Range slider style */
